@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shaswata De | ML Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div id="loader"></div>
+    <div class="cursor"></div>
+
+
+    <!-- NAVBAR -->
+    <nav>
+        <!-- <h2>Shaswata</h2> -->
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#research">Research Paper</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button onclick="toggleTheme()">🌙</button>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero">
+        <!-- <img src="profile.jpg" class="profile"> -->
+        <h1>Hello, I'm Shaswata De</h1>
+        <p id="typing"></p>
+        <a href="resume\My_cv.pdf" download class="btn">Download Resume</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="card about-section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-layout">
+            <!-- Interactive Profile Card -->
+            <div class="profile-card">
+                <div class="profile-glow"></div>
+                <div class="profile-front">
+                    <img src="Images/20250921_095035.jpg" alt="Shaswata De" class="profile-img"
+                        onerror="this.src='https://via.placeholder.com/150'">
+                    <h3>Shaswata De</h3>
+                    <p class="role">AI / ML Enthusiast</p>
+                    <div class="profile-info">
+                        <p>📍 WB, India</p>
+                        <p>🎓 B.Tech ECE @ KGEC</p>
+                        <p>⚡ High-Performance Computing</p>
+                    </div>
+                    <div class="status-tag">
+                        <span class="pulse-dot"></span> Open for Research
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="about-content">
+                <p class="about-intro">
+                    I am an Electronics and Communication Engineering student at <strong>Kalyani Government Engineering
+                        College</strong>,
+                    driven by the potential of <strong>Artificial Intelligence</strong> to reshape the world.
+                </p>
+
+                <p>
+                    My expertise lies in building end-to-end AI systems, from <strong>Deep Learning</strong>
+                    architectures
+                    to scalable <strong>FastAPI</strong> deployments. I specialize in computer vision applications and
+                    medical AI solutions.
+                </p>
+
+                <div class="quick-stats">
+                    <div class="stat-item">
+                        <h4>8.5</h4>
+                        <span>SGPA (Avg)</span>
+                    </div>
+                    <div class="stat-item">
+                        <h4>6+</h4>
+                        <span>Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <h4>120+</h4>
+                        <span>LeetCode Problems and ongoing</span>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Top 5%</h4>
+                        <span>JEE/WBJEE</span>
+                    </div>
+                </div>
+
+                <div class="interests">
+                    <h3>Interests</h3>
+                    <div class="interest-tags">
+                        <span>Machine Learning</span>
+                        <span>Medical AI</span>
+                        <span>Generative AI</span>
+                        <span>Microcontrollers</span>
+                        <span>Explainable AI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="card" id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>B.Tech in Electronics and Communication Engineering</h3>
+                    <p class="institution">Kalyani Government Engineering College</p>
+                    <p class="details">Currently Studying (Upto 5th Semester) | SGPA: 8.5</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Competitive Exams</h3>
+                    <div class="exam-flex">
+                        <p class="details">WBJEE GMR: 2091 (2023)</p>
+                        <p class="details">JEE Mains: 96.8 %tile (2023)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Class 12th (Higher Secondary)</h3>
+                    <p class="year">2023</p>
+                    <p class="details">Percentage: 94.20% (Secured first rank in school)</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Class 10th (Secondary)</h3>
+                    <p class="year">2021</p>
+                    <p class="details">Percentage: 93.57%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------- -->
+    <!-- SKILLS -->
+    <section class="card" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-network">
+            <svg class="connections"></svg>
+            <div class="skill-grid">
+
+                <div class="skill-item">
+                    <img src="images/python.png">
+                    <span>Python</span>
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/ML.png">
+                    <span>Machine Learning</span>
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/Deep.png">
+                    <span>Deep Learning</span>
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/TensorFlow.jpg">
+                    <span>TensorFlow</span>
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/java.png">
+                    <span>JAVA(DSA)</span>
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/dataScience.jpg">
+                    <span>Data Analysis</span>
+                </div>
+                <div class="skill-item">
+                    <img src="images/NLP.png">
+                    <span>Natural Language Processing</span>
+                </div>
+                <div class="skill-item">
+                    <img src="images/docker.png">
+                    <span>Docker</span>
+                </div>
+                <div class="skill-item">
+                    <img src="images/NN.avif">
+                    <span>Neural Networks</span>
+                </div>
+                <div class="skill-item">
+                    <img src="images/fastapi.png">
+                    <span>FASTAPI</span>
+                </div>
+                <div class="skill-item">
+                    <img src="images/mysql.svg">
+                    <span>MYSQL</span>
+                </div>
+                <div class="skill-item">
+                    <img src="images/streamlit.png">
+                    <span>STREAMLIT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="card" id="achievements">
+        <h2 class="section-title">Achievements</h2>
+        <div class="achievement-grid">
+            <div class="achievement-card">
+                <div class="ach-icon">🧠</div>
+                <div class="ach-content">
+                    <h3>Medical Imaging AI</h3>
+                    <p>Built high-accuracy CNN models for medical image classification, facilitating early diagnosis.
+                    </p>
+                </div>
+                <div class="ach-glow"></div>
+            </div>
+
+            <div class="achievement-card">
+                <div class="ach-icon">🚀</div>
+                <div class="ach-content">
+                    <h3>ML Deployment</h3>
+                    <p>Developed scalable FastAPI deployments for ML models, bridging the gap between research and
+                        production.</p>
+                </div>
+                <div class="ach-glow"></div>
+            </div>
+
+            <div class="achievement-card">
+                <div class="ach-icon">🔍</div>
+                <div class="ach-content">
+                    <h3>Explainable AI (XAI)</h3>
+                    <p>Implemented Grad-CAM to visualize and explain model decision-making processes for
+                        trustworthiness.</p>
+                </div>
+                <div class="ach-glow"></div>
+            </div>
+
+            <div class="achievement-card">
+                <div class="ach-icon">📜</div>
+                <div class="ach-content">
+                    <h3>Data Science Specialist</h3>
+                    <p>Certified Data Science specialist from Udemy (365 Careers), mastering end-to-end pipelines.</p>
+                </div>
+                <div class="ach-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH PAPER -->
+    <!-- <section class="card" id="research">
+        <h2 class="section-title">Research Paper</h2>
+        <div class="research-grid">
+            <div class="research-card">
+                <div class="res-icon">📄</div>
+                <div class="res-content">
+                    <h3>Multi-Modal Medical Diagnosis</h3>
+                    <p class="journal">Ongoing Research | IEEE (Proposed)</p>
+                    <p>Researching on multi-modal deep learning architectures for early-stage cancer detection using
+                        heterogeneous data sources.</p>
+                </div>
+                <div class="res-actions">
+                    <a href="#" class="view-btn">Full Paper</a>
+                </div>
+                <div class="res-glow"></div>
+            </div>
+
+            <div class="research-card">
+                <div class="res-icon">📚</div>
+                <div class="res-content">
+                    <h3>Explainable AI in Healthcare</h3>
+                    <p class="journal">Pre-print | ArXiv</p>
+                    <p>Exploring the interpretability of neural network decisions in clinical settings using Grad-CAM
+                        and integrated gradients.</p>
+                </div>
+                <div class="res-actions">
+                    <a href="#" class="view-btn">View Pre-print</a>
+                </div>
+                <div class="res-glow"></div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- LICENSES AND CERTIFICATIONS -->
+    <section class="card" id="certifications">
+        <h2>Licenses and Certifications</h2>
+        <div class="certification-grid">
+            <div class="certification-item">
+                <div class="cert-info">
+                    <h3>The complete Data Science Course</h3>
+                    <p>Udemy | 365 Careers </p>
+                </div>
+                <a href="lisence/UC-3116c93b-4560-42c2-9a70-d071f416bd39.pdf" class="view-cert-btn">View Certificate</a>
+            </div>
+            <div class="certification-item">
+                <div class="cert-info">
+                    <h3>Machine Learning And Artificial Intelligence</h3>
+                    <p>Udemy</p>
+                </div>
+                <a href="lisence/UC-04f53c77-f2fd-4ba4-ad1a-36491b97c554.pdf" class="view-cert-btn">View Certificate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="card" id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project" data-tilt>
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="proj-icon">🎗️</span>
+                        <h3>Cancer Classification</h3>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Logistic Regression</span>
+                        <span class="tech-tag">Scikit-Learn</span>
+                    </div>
+                </div>
+                <div class="project-hover">
+                    <p>Predicts breast cancer presence from medical image data. Includes preprocessing, training, and
+                        evaluation.</p>
+                    <div class="proj-actions">
+                        <a href="#" class="view-btn">Project Link</a>
+                        <!-- <a href="#" class="view-btn primary">Live Demo</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-tilt>
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="proj-icon">🥔</span>
+                        <h3>Potato Disease Identify</h3>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">FastAPI</span>
+                    </div>
+                </div>
+                <div class="project-hover">
+                    <p>Identifies potato leaf diseases using CNN models with high accuracy and provides treatments.</p>
+                    <div class="proj-actions">
+                        <a href="https://github.com/Shaswata110503/Potato_Diseases_Detection_Uisng_CNN"
+                            class="view-btn">Project Link</a>
+                        <!-- <a href="#" class="view-btn primary">Live Demo</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-tilt>
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="proj-icon">🏅</span>
+                        <h3>Olympic Data Analyzer</h3>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">FASTAPI</span>
+                        <span class="tech-tag">Numpy</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Plotly</span>
+                        <span class="tech-tag">Heatmap</span>
+                    </div>
+                </div>
+                <div class="project-hover">
+                    <p>Interactive dashboard to analyze 120+ years of Olympic history with medal tallies and trend
+                        analysis.</p>
+                    <div class="proj-actions">
+                        <a href="https://github.com/Shaswata110503/120-years-Summer-Olympic-Analysis"
+                            class="view-btn">Project Link</a>
+                        <a href="demos/olympic.mp4" class="view-btn primary">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-tilt>
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="proj-icon">🐍</span>
+                        <h3>Snake Game</h3>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OOPS</span>
+                        <span class="tech-tag">Tkinter</span>
+                    </div>
+                </div>
+                <div class="project-hover">
+                    <p>Classic Snake game using OOPS principles with high-score tracking and difficulty levels.</p>
+                    <div class="proj-actions">
+                        <a href="https://github.com/Shaswata110503/Snake-Game-using-OOPS" class="view-btn">Project
+                            Link</a>
+                        <a href="demos/Snake.mp4" class="view-btn primary">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-tilt>
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="proj-icon">🛒</span>
+                        <h3>AI Smart Grocer</h3>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">AI Chatbot</span>
+                        <span class="tech-tag">MYSQL</span>
+                        <span class="tech-tag">ML</span>
+                        <span class="tech-tag">Data Analysis</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">FASTAPI</span>
+                    </div>
+                </div>
+                <div class="project-hover">
+                    <p>Smart grocery assistant using AI for product recommendations and customer segmentation, review
+                        system, All types of data analysis.</p>
+                    <div class="proj-actions">
+                        <a href="https://github.com/Shaswata110503/Grocery_App_Management" class="view-btn">Project
+                            Link</a>
+                        <a href="demos/grocery.mp4" class="view-btn primary">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project" data-tilt>
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="proj-icon">🚗</span>
+                        <h3>Bluetooth Controlled Car</h3>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">Python GUI</span>
+                        <span class="tech-tag">Sensors</span>
+                    </div>
+                </div>
+                <div class="project-hover">
+                    <p>Arduino-based car controlled via Bluetooth with a custom Python GUI application.</p>
+                    <div class="proj-actions">
+                        <a href="#" class="view-btn">Project Link</a>
+                        <a href="demos/Aurdino.mp4" class="view-btn primary">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="card" id="contact">
+        <h2>Contact</h2>
+        <p>Email: deshaswata2023@gmail.com</p>
+        <p>LinkedIn: linkedin.com/in/shaswata-de</p>
+        <p>Phone: +91 9679072750</p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80 },
+                size: { value: 3 },
+                move: { speed: 1 },
+                line_linked: { enable: true },
+                color: { value: "#38bdf8" }
+            }
+        });
+
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
